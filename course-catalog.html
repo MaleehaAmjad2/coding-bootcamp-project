@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Catalog - Coding Bootcamp</title>
+    <link rel="stylesheet" href="../cssFile/globalStyles.css">
+</head>
+<body>
+    <nav class="navbar navbar-main">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">CodeBootcamp</a>
+            <ul class="nav-menu nav-active">
+                <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="course-catalog.html" class="nav-link">Courses</a></li>
+                <li class="nav-item"><a href="about-us.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="registration.html" class="nav-link nav-link-cta">Get Started</a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+        </div>
+    </nav>
+
+    <section class="hero-small" style="min-height: 250px; background: linear-gradient(135deg, #FF1493 0%, #FF69B4 100%); padding: 40px 20px; text-align: center; display: flex; align-items: center; justify-content: center;">
+        <div style="max-width: 600px;">
+            <h1 style="font-size: 2rem; color: #000000; margin-bottom: 10px;">Our Courses</h1>
+            <p style="font-size: 1rem; color: #333333;">Choose from our comprehensive programming bootcamps</p>
+        </div>
+    </section>
+
+    <section class="section-main">
+        <div class="section-header">
+            <h2 class="section-title">Featured Programs</h2>
+        </div>
+        <div class="card-container">
+            <div class="card card-course" style="max-width: 300px;">
+                <div class="card-image"><img src="../sources/images/course1.jpg" alt="Web Development"></div>
+                <div class="card-content">
+                    <h3 class="card-title">Web Development</h3>
+                    <p class="card-description">HTML, CSS, JavaScript, React & Node.js</p>
+                    <p class="card-duration">12 Weeks | Beginner to Advanced</p>
+                    <a href="course-details.html?course=web-development" class="btn btn-secondary">View Details</a>
+                </div>
+            </div>
+
+            <div class="card card-course" style="max-width: 300px;">
+                <div class="card-image"><img src="../sources/images/course2.jpg" alt="Python Programming"></div>
+                <div class="card-content">
+                    <h3 class="card-title">Python Programming</h3>
+                    <p class="card-description">Data structures, OOP, and real-world projects</p>
+                    <p class="card-duration">10 Weeks | Beginner to Intermediate</p>
+                    <a href="course-details.html?course=python-programming" class="btn btn-secondary">View Details</a>
+                </div>
+            </div>
+
+            <div class="card card-course" style="max-width: 300px;">
+                <div class="card-image"><img src="../sources/images/course3.jpg" alt="Full Stack Development"></div>
+                <div class="card-content">
+                    <h3 class="card-title">Full Stack Development</h3>
+                    <p class="card-description">Complete backend and frontend mastery</p>
+                    <p class="card-duration">16 Weeks | Intermediate to Advanced</p>
+                    <a href="course-details.html?course=full-stack-development" class="btn btn-secondary">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer footer-main">
+        <div class="footer-container">
+            <div class="footer-section"><h4 class="footer-title">CodeBootcamp</h4><p class="footer-text">Your gateway to coding success</p></div>
+            <div class="footer-section"><h4 class="footer-title">Links</h4><ul class="footer-links"><li><a href="course-catalog.html" class="footer-link">Courses</a></li><li><a href="about-us.html" class="footer-link">About</a></li></ul></div>
+        </div>
+        <div class="footer-bottom"><p class="footer-copyright">&copy; 2024 CodeBootcamp. All rights reserved.</p></div>
+    </footer>
+
+    <script src="../jsFile/jsFunctions.js"></script>
+</body>
+</html>

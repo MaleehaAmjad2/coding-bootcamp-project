@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Coding Bootcamp</title>
+    <link rel="stylesheet" href="../cssFile/globalStyles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html">CodeBootcamp</a>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="course-catalog.html">Courses</a></li>
+                <li><a href="about-us.html">About</a></li>
+                <li><a href="registration.html">Get Started</a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+        </div>
+    </nav>
+
+    <section class="hero-small" style="min-height: 200px; background: linear-gradient(135deg, #FF1493 0%, #FF69B4 100%); padding: 40px 20px;">
+        <div style="max-width: 600px; margin: 0 auto; text-align: center;">
+            <h1 style="font-size: 2rem; color: #000000; margin-bottom: 10px;">About CodeBootcamp</h1>
+            <p style="font-size: 1rem; color: #333333;">Building the next generation of coders</p>
+        </div>
+    </section>
+
+<section class="section" style="padding: 50px 20px;">
+    <div style="max-width: 600px; margin: 0 auto;">
+        <h2 style="text-align: center; color: #FF1493; margin-bottom: 30px;">Our Mission</h2>
+        <div class="card" style="margin: 0 auto; max-width: 500px;">
+            <div style="padding: 25px; text-align: center;">
+                <p style="text-align: center; color: #333333;">We empower students to become skilled developers through practical, hands-on learning. Our mission is to bridge the gap between education and industry needs.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="section" style="padding: 50px 20px;">
+        <div style="max-width: 900px; margin: 0 auto;">
+            <h2 style="text-align: center; color: #FF1493; margin-bottom: 40px;">Our Values</h2>
+            <div class="container">
+                <div class="feature">
+                    <div>💡</div>
+                    <h3 style="color: #000000;">Innovation</h3>
+                    <p style="color: #333333;">Staying ahead with latest technologies</p>
+                </div>
+                <div class="feature">
+                    <div>🤝</div>
+                    <h3 style="color: #000000;">Community</h3>
+                    <p style="color: #333333;">Building a supportive learning environment</p>
+                </div>
+                <div class="feature">
+                    <div>⭐</div>
+                    <h3 style="color: #000000;">Excellence</h3>
+                    <p style="color: #333333;">Delivering quality education and support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="padding: 50px 20px;">
+        <div style="max-width: 600px; margin: 0 auto;">
+            <h2 style="text-align: center; color: #FF1493; margin-bottom: 30px;">Get In Touch</h2>
+            <form class="form" onsubmit="handleContactSubmit(event)">
+                <div>
+                    <label>Name *</label>
+                    <input type="text" placeholder="Your name" required>
+                </div>
+                <div>
+                    <label>Email *</label>
+                    <input type="email" placeholder="your@email.com" required>
+                </div>
+                <div>
+                    <label>Subject *</label>
+                    <input type="text" placeholder="Subject" required>
+                </div>
+                <div>
+                    <label>Message *</label>
+                    <textarea placeholder="Your message here..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="section" style="padding: 50px 20px;">
+        <div style="max-width: 500px; margin: 0 auto; text-align: center;">
+            <h2 style="color: #FF1493; margin-bottom: 30px;">Contact Information</h2>
+            <div class="card" style="max-width: 400px; margin: 0 auto;">
+                <div style="padding: 30px; text-align: center;">
+                    <p style="margin-bottom: 15px;"><strong style="color: #000000;">Email:</strong></p>
+                    <p style="color: #FF1493; margin-bottom: 30px; font-size: 0.95rem;">malleehaa626@Gmail.com</p>
+                    <p style="margin-bottom: 15px;"><strong style="color: #000000;">Location:</strong></p>
+                    <p style="color: #333333;">Pakistan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-main">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4 class="footer-title">CodeBootcamp</h4>
+                <p class="footer-text">Your gateway to coding success</p>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-title">Links</h4>
+                <ul class="footer-links">
+                    <li><a href="course-catalog.html" class="footer-link">Courses</a></li>
+                    <li><a href="about-us.html" class="footer-link">About</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copyright">&copy; 2024 CodeBootcamp. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../jsFile/jsFunctions.js"></script>
+    <script>
+        function handleContactSubmit(event) {
+            event.preventDefault();
+            showMessage('Message sent successfully!', 'success');
+            event.target.reset();
+        }
+    </script>
+</body>
+</html>

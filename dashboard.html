@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Coding Bootcamp</title>
+    <link rel="stylesheet" href="../cssFile/globalStyles.css">
+</head>
+<body>
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="navbar navbar-main">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">CodeBootcamp</a>
+            <ul class="nav-menu nav-active">
+                <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="course-catalog.html" class="nav-link">Courses</a></li>
+                <li class="nav-item"><a href="about-us.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="registration.html" class="nav-link nav-link-cta">Get Started</a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+        </div>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero hero-main">
+        <h1 class="hero-title">Your Dashboard</h1>
+        <p class="hero-subtitle">Track your learning progress</p>
+    </section>
+
+    <!-- ===== PAGE CONTENT ===== -->
+    <section class="page">
+
+        <!-- ===== WELCOME SECTION ===== -->
+        <div style="margin-bottom: 50px;">
+            <div class="card-container">
+                <div class="card" style="max-width: 800px;">
+                    <div style="padding: 30px; text-align: center;">
+                        <h2 style="color: var(--brand-primary-color); margin-bottom: 15px;">Welcome Back!</h2>
+                        <p style="color: var(--text-secondary-color); font-size: 1rem;">Continue your learning journey with us</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== STATS SECTION ===== -->
+        <div style="margin-bottom: 50px;">
+            <h2 style="color: var(--brand-primary-color); margin-bottom: 40px; text-align: center;">Your Progress</h2>
+            <div class="card-container">
+                <div class="card" style="max-width: 280px;">
+                    <div style="padding: 30px; text-align: center;">
+                        <div style="font-size: 2.5rem; color: var(--brand-primary-color); font-weight: 700; margin-bottom: 10px;">3</div>
+                        <h3 style="color: var(--text-primary-color); margin-bottom: 5px;">Enrolled Courses</h3>
+                        <p style="color: var(--text-muted-color); font-size: 0.9rem;">Active courses in progress</p>
+                    </div>
+                </div>
+                <div class="card" style="max-width: 280px;">
+                    <div style="padding: 30px; text-align: center;">
+                        <div style="font-size: 2.5rem; color: var(--brand-primary-color); font-weight: 700; margin-bottom: 10px;">65%</div>
+                        <h3 style="color: var(--text-primary-color); margin-bottom: 5px;">Overall Progress</h3>
+                        <p style="color: var(--text-muted-color); font-size: 0.9rem;">Completion rate across all courses</p>
+                    </div>
+                </div>
+                <div class="card" style="max-width: 280px;">
+                    <div style="padding: 30px; text-align: center;">
+                        <div style="font-size: 2.5rem; color: var(--brand-primary-color); font-weight: 700; margin-bottom: 10px;">12</div>
+                        <h3 style="color: var(--text-primary-color); margin-bottom: 5px;">Lessons Completed</h3>
+                        <p style="color: var(--text-muted-color); font-size: 0.9rem;">Modules finished successfully</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== ENROLLED COURSES SECTION ===== -->
+        <div style="margin-bottom: 50px;">
+            <h2 style="color: var(--brand-primary-color); margin-bottom: 40px; text-align: center;">Enrolled Courses</h2>
+            <div class="card-container">
+                <div class="card" style="max-width: 330px;">
+                    <div style="width: 100%; height: 180px; background: #F0F0F0; display: flex; align-items: center; justify-content: center;">
+                        <img src="../sources/images/course1.jpg" alt="Web Development" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div style="padding: 25px; display: flex; flex-direction: column; flex-grow: 1;">
+                        <h3 style="color: var(--text-primary-color); margin-bottom: 10px;">Web Development</h3>
+                        <p style="color: var(--text-muted-color); font-size: 0.9rem; margin-bottom: 15px;">12 Weeks Course</p>
+                        <div style="margin-bottom: 15px;">
+                            <p style="color: var(--text-muted-color); font-size: 0.85rem; margin: 0 0 8px 0;">Progress: 70%</p>
+                            <div style="width: 100%; height: 8px; background: #E0E0E0; border-radius: 4px; overflow: hidden;">
+                                <div style="width: 70%; height: 100%; background: var(--brand-primary-color);"></div>
+                            </div>
+                        </div>
+                        <a href="course-details.html?course=web-development" class="btn btn-secondary" style="margin-top: auto;">Continue Course</a>
+                    </div>
+                </div>
+
+                <div class="card" style="max-width: 330px;">
+                    <div style="width: 100%; height: 180px; background: #F0F0F0; display: flex; align-items: center; justify-content: center;">
+                        <img src="../sources/images/course2.jpg" alt="Python Programming" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div style="padding: 25px; display: flex; flex-direction: column; flex-grow: 1;">
+                        <h3 style="color: var(--text-primary-color); margin-bottom: 10px;">Python Programming</h3>
+                        <p style="color: var(--text-muted-color); font-size: 0.9rem; margin-bottom: 15px;">10 Weeks Course</p>
+                        <div style="margin-bottom: 15px;">
+                            <p style="color: var(--text-muted-color); font-size: 0.85rem; margin: 0 0 8px 0;">Progress: 50%</p>
+                            <div style="width: 100%; height: 8px; background: #E0E0E0; border-radius: 4px; overflow: hidden;">
+                                <div style="width: 50%; height: 100%; background: var(--brand-primary-color);"></div>
+                            </div>
+                        </div>
+                        <a href="course-details.html?course=python-programming" class="btn btn-secondary" style="margin-top: auto;">Continue Course</a>
+                    </div>
+                </div>
+
+                <div class="card" style="max-width: 330px;">
+                    <div style="width: 100%; height: 180px; background: #F0F0F0; display: flex; align-items: center; justify-content: center;">
+                        <img src="../sources/images/course3.jpg" alt="Full Stack Development" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div style="padding: 25px; display: flex; flex-direction: column; flex-grow: 1;">
+                        <h3 style="color: var(--text-primary-color); margin-bottom: 10px;">Full Stack Development</h3>
+                        <p style="color: var(--text-muted-color); font-size: 0.9rem; margin-bottom: 15px;">16 Weeks Course</p>
+                        <div style="margin-bottom: 15px;">
+                            <p style="color: var(--text-muted-color); font-size: 0.85rem; margin: 0 0 8px 0;">Progress: 65%</p>
+                            <div style="width: 100%; height: 8px; background: #E0E0E0; border-radius: 4px; overflow: hidden;">
+                                <div style="width: 65%; height: 100%; background: var(--brand-primary-color);"></div>
+                            </div>
+                        </div>
+                        <a href="course-details.html?course=full-stack-development" class="btn btn-secondary" style="margin-top: auto;">Continue Course</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== RECENT ACTIVITY SECTION ===== -->
+        <div style="margin-bottom: 50px;">
+            <h2 style="color: var(--brand-primary-color); margin-bottom: 40px; text-align: center;">Recent Activity</h2>
+            <div class="table-container" style="min-width: 500px; max-width: 900px; margin: 0 auto;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="padding: 15px;">Activity</th>
+                            <th style="padding: 15px;">Course</th>
+                            <th style="padding: 15px;">Date</th>
+                            <th style="padding: 15px;">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="padding: 12px 15px; border-bottom: 1px solid var(--border-muted-color); color: var(--text-primary-color);">Completed Module 5</td>
+                            <td style="padding: 12px 15px; border-bottom: 1px solid var(--border-muted-color); color: var(--text-primary-color);">Web Development</td>
+                            <td style="padding: 12px 15px; border-bottom: 1px solid var(--border-muted-color); color: var(--text-primary-color);">2026-04-25</td>
+                            <td style="padding: 12px 15px; border-bottom: 1px solid var(--border-muted-color);"><span style="background: #4CAF50; color: white; padding: 4px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 600;">Completed</span></td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 12px 15px; border-bottom: 1px solid var(--border-muted-color); color: var(--text-primary-color);">Started Quiz 3</td>
+                            <td style="padding: 12px 15px; border-bottom: 1px solid var(--border-muted-color); color: var(--text-primary-color);">Python Programming</td>
+                            <td style="padding: 12px 15px; border-bottom: 1px solid var(--border-muted-color); color: var(--text-primary-color);">2026-04-23</td>
+                            <td style="padding: 12px 15px; border-bottom: 1px solid var(--border-muted-color);"><span style="background: #FFA500; color: white; padding: 4px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 600;">In Progress</span></td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 12px 15px; border-bottom: 1px solid var(--border-muted-color); color: var(--text-primary-color);">Watched Lecture 2</td>
+                            <td style="padding: 12px 15px; border-bottom: 1px solid var(--border-muted-color); color: var(--text-primary-color);">Full Stack Development</td>
+                            <td style="padding: 12px 15px; border-bottom: 1px solid var(--border-muted-color); color: var(--text-primary-color);">2026-04-20</td>
+                            <td style="padding: 12px 15px; border-bottom: 1px solid var(--border-muted-color);"><span style="background: #4CAF50; color: white; padding: 4px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 600;">Completed</span></td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 12px 15px; color: var(--text-primary-color);">Enrolled Course</td>
+                            <td style="padding: 12px 15px; color: var(--text-primary-color);">Web Development</td>
+                            <td style="padding: 12px 15px; color: var(--text-primary-color);">2026-04-15</td>
+                            <td style="padding: 12px 15px;"><span style="background: #4CAF50; color: white; padding: 4px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 600;">Completed</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer footer-main">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4 class="footer-title">CodeBootcamp</h4>
+                <p class="footer-text">Your gateway to coding success</p>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-title">Links</h4>
+                <ul class="footer-links">
+                    <li><a href="course-catalog.html" class="footer-link">Courses</a></li>
+                    <li><a href="about-us.html" class="footer-link">About</a></li>
+                    <li><a href="registration.html" class="footer-link">Register</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copyright">&copy; 2026 CodeBootcamp. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../jsFile/jsFunctions.js"></script>
+</body>
+</html>sss
