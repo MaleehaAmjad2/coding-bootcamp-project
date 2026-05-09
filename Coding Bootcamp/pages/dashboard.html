@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Coding Bootcamp</title>
+    <link rel="stylesheet" href="../cssFile/globalStyles.css">
+    <script src="../jsFile/jsFunctions.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">CodeBootcamp</a>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="course-details.html" class="nav-link">Courses</a></li>
+                <li><a href="about-us.html" class="nav-link">About</a></li>
+                <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+                <li><a href="registration.html" class="nav-link nav-link-cta">Get Started</a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+        </div>
+    </nav>
+
+    <section class="hero-small">
+        <div>
+            <h1>Welcome Back! 👋</h1>
+            <p>Continue your coding journey where you left off</p>
+        </div>
+    </section>
+
+    <main class="page">
+        <!-- Student Statistics -->
+        <div class="stats-container">
+            <div class="stat-card">
+                <h3>3</h3>
+                <p>Enrolled Courses</p>
+            </div>
+            <div class="stat-card">
+                <h3>58%</h3>
+                <p>Overall Progress</p>
+            </div>
+            <div class="stat-card">
+                <h3>12</h3>
+                <p>Lessons Completed</p>
+            </div>
+        </div>
+
+        <!-- Enrolled Courses Progress -->
+        <h2 class="section-title-center">📚 Enrolled Courses Progress</h2>
+        <div class="progress-grid">
+            <!-- Course 1: Web Development -->
+            <div class="progress-card">
+                <div class="course-icon">🌐</div>
+                <div class="course-name">Web Development</div>
+                <h3>HTML, CSS, JavaScript & React</h3>
+                <div class="progress">
+                    <div class="progress-bar"><div class="progress-fill" style="width: 70%;"></div></div>
+                    <span>70% Complete</span>
+                </div>
+                <div class="modules-left">⏰ 5 modules left</div>
+                <div class="completion-date">📅 Est. completion: 2 weeks</div>
+                <a href="course-details.html" class="btn btn-primary">Continue Course →</a>
+            </div>
+
+            <!-- Course 2: Python Programming -->
+            <div class="progress-card">
+                <div class="course-icon">🐍</div>
+                <div class="course-name">Python Programming</div>
+                <h3>Data Structures, OOP & Projects</h3>
+                <div class="progress">
+                    <div class="progress-bar"><div class="progress-fill" style="width: 50%;"></div></div>
+                    <span>50% Complete</span>
+                </div>
+                <div class="modules-left">⏰ 6 modules left</div>
+                <div class="completion-date">📅 Est. completion: 3 weeks</div>
+                <a href="course-details.html" class="btn btn-primary">Continue Course →</a>
+            </div>
+
+            <!-- Course 3: Full Stack Development -->
+            <div class="progress-card">
+                <div class="course-icon">⚛️</div>
+                <div class="course-name">Full Stack Development</div>
+                <h3>Frontend + Backend + Database</h3>
+                <div class="progress">
+                    <div class="progress-bar"><div class="progress-fill" style="width: 43%;"></div></div>
+                    <span>43% Complete</span>
+                </div>
+                <div class="modules-left">⏰ 9 modules left</div>
+                <div class="completion-date">📅 Est. completion: 5 weeks</div>
+                <a href="course-details.html" class="btn btn-primary">Continue Course →</a>
+            </div>
+        </div>
+
+        <!-- Graphical Progress View -->
+        <h2 class="section-title-center">📈 My Progress Overview</h2>
+        <div class="chart-container">
+            <div class="bars-wrapper">
+                <div class="progress-bar-item">
+                    <div class="bar" style="height: 70px;"></div>
+                    <div class="label">Web Dev</div>
+                    <div class="percentage">70%</div>
+                </div>
+                <div class="progress-bar-item">
+                    <div class="bar" style="height: 50px;"></div>
+                    <div class="label">Python</div>
+                    <div class="percentage">50%</div>
+                </div>
+                <div class="progress-bar-item">
+                    <div class="bar" style="height: 43px;"></div>
+                    <div class="label">Full Stack</div>
+                    <div class="percentage">43%</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Enrolled Courses Details Table -->
+        <h2 class="section-title-center">📋 Enrolled Courses Details</h2>
+        <div class="table-container" style="min-width: 280px; max-width: 100%;">
+            <table style="min-width: 500px; max-width: 100%;">
+                <thead>
+                    <tr>
+                        <th>Course Name</th>
+                        <th>Price (PKR)</th>
+                        <th>Progress</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr onclick="window.location.href='course-details.html'">
+                        <td>Web Development</td>
+                        <td>₨ 4,999</td>
+                        <td><div class="progress-bar" style="width:100%; height:6px;"><div class="progress-fill" style="width:70%; height:6px;"></div></div>70%</td>
+                        <td><span class="status-badge status-progress">In Progress</span></td>
+                    </tr>
+                    <tr onclick="window.location.href='course-details.html'">
+                        <td>Python Programming</td>
+                        <td>₨ 3,499</td>
+                        <td><div class="progress-bar" style="width:100%; height:6px;"><div class="progress-fill" style="width:50%; height:6px;"></div></div>50%</td>
+                        <td><span class="status-badge status-progress">In Progress</span></td>
+                    </tr>
+                    <tr onclick="window.location.href='course-details.html'">
+                        <td>Full Stack Development</td>
+                        <td>₨ 5,999</td>
+                        <td><div class="progress-bar" style="width:100%; height:6px;"><div class="progress-fill" style="width:43%; height:6px;"></div></div>43%</td>
+                        <td><span class="status-badge status-started">Just Started</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4 class="footer-title">CodeBootcamp</h4>
+                <p class="footer-text">Your gateway to coding success</p>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="course-details.html" class="footer-link">Courses</a></li>
+                    <li><a href="about-us.html" class="footer-link">About</a></li>
+                    <li><a href="dashboard.html" class="footer-link">Dashboard</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-title">Follow Us</h4>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">Facebook</a></li>
+                    <li><a href="#" class="footer-link">Twitter</a></li>
+                    <li><a href="#" class="footer-link">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copyright">&copy; 2026 CodeBootcamp. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
